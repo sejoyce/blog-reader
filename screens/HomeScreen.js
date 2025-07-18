@@ -1,10 +1,8 @@
 import React from 'react';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
   return (
-    <SafeAreaView style={styles.container}>
     <View style={styles.container}>
       <TouchableOpacity
         style={styles.button}
@@ -20,14 +18,12 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.title}>Google Project Zero</Text>
       </TouchableOpacity>
     </View>
-    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 40,
     backgroundColor: 'white',
   },
   button: {

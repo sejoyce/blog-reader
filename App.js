@@ -12,11 +12,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ headerShown: false }} // 👈 hides "Home" and removes top spacing
-        />
+        <Stack.Screen name="Blogs" component={HomeScreen} />
         <Stack.Screen name="Articles" component={ArticleListScreen} />
         <Stack.Screen name="WebView" component={WebViewScreen} />
       </Stack.Navigator>
